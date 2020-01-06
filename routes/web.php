@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main.welcome');
+});
+
+Route::get('/authors', function () {
+    return view('authors.index');
+});
+
+Route::get('/books', function () {
+    return view('books.index');
+});
+
+Route::get('/contact', function () {
+    return view('contact.index');
 });
